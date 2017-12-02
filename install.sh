@@ -1,6 +1,3 @@
-# Based on tutorial at:
-# https://medium.com/@shakyShane/laravel-docker-part-1-setup-for-development-e3daaefaf3c
-
 if [ "$1" == "" ]; then
 echo "###################################\n"
 echo "# Author: Tiago Gomes              \n"
@@ -16,8 +13,8 @@ mv $(pwd)/laravel-5.3.16/* $(pwd)
 rm -rf laravel-5.3.16
 touch .env
 
-
 # Docker Composer Install
+docker up --build
 docker run --rm -v $(pwd):/app composer/composer install
 docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan optimize

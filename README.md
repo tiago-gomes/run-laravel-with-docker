@@ -8,13 +8,14 @@
 </p>
 
 ## Instalation
+```
 bash ./install.sh
+```
 
 ## How to run
+```
 docker up
-
-## Configuration
-
+```
 
 ## License
-GPL 
+GNU General Public License v2.0
