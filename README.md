@@ -31,6 +31,11 @@ List all images
 docker images -a
 ```
 
+Stop all containers
+```
+docker stop $(docker ps -a -q)
+```
+
 destroy all images
 ```
 docker kill $(docker ps -q)
@@ -39,6 +44,10 @@ docker kill $(docker ps -q)
 Remove all images
 ```
 docker rmi $(docker images -a -q)
+```
+
+```
+docker rm $(docker ps -a -q)
 ```
 
 ## License
