@@ -8,6 +8,13 @@
 </p>
 
 ## Instalation
+
+Clone the repository
+```
+bash ./install.sh
+```
+
+Run the install script
 ```
 bash ./install.sh
 ```
@@ -15,6 +22,23 @@ bash ./install.sh
 ## How to run
 ```
 docker up
+```
+
+## Clean Docker Compose Install
+
+List all images
+```
+docker images -a
+```
+
+destroy all images
+```
+docker kill $(docker ps -q)
+```
+
+Remove all images
+```
+docker rmi $(docker images -a -q)
 ```
 
 ## License
