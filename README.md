@@ -19,6 +19,13 @@ Run the installation script
 bash ./install.sh
 ```
 
+Update the key in .env file and update with the generated key
+```
+docker-compose exec app php artisan key:generate
+docker-compose exec app php artisan cache:clear
+docker-compose exec app php artisan config:clear
+```
+
 ## How to run after instalation
 ```
 docker up
