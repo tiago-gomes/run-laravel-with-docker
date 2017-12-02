@@ -11,15 +11,15 @@
 
 Clone the repository
 ```
+git clone https://github.com/tiago-gomes/docker_laravel.git .
+```
+
+Run the installation script
+```
 bash ./install.sh
 ```
 
-Run the install script
-```
-bash ./install.sh
-```
-
-## How to run
+## How to run after instalation
 ```
 docker up
 ```

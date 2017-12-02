@@ -14,7 +14,7 @@ rm -rf laravel-5.3.16
 touch .env
 
 # Docker Composer Install
-docker up --build
+docker-compose up --build
 docker run --rm -v $(pwd):/app composer/composer install
 docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan optimize
